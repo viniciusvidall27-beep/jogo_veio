@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca | Jogo Véio</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-2">
+      <a class="marca" href="index.html">
+        <img class="pixelado" src="img/logo.png" alt="Logo do Jogo Véio: gaúcho em pixel art segurando um espeto">
+        <span class="marca-nome">JOGO<br><span>VÉIO</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="menu-link d-block" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="menu-link d-block ativo" href="biblioteca.html">Biblioteca</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="consoles.html">Consoles</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="midia.html">Mídia</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="minha-lista.html">Minha lista</a></li>
+          <li class="nav-item dropdown">
+            <a class="menu-link d-block dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="comparativo.html">Comparativo</a></li>
+              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://retroachievements.org" target="_blank" rel="noopener">RetroAchievements</a></li>
+              <li><a class="dropdown-item" href="https://github.com" target="_blank" rel="noopener">GitHub do projeto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-5">
+    <section class="mb-4">
+      <h1>Biblioteca</h1>
+      <p class="texto-suave fs-5 m-0">Escolha um jogo para ver a história, as imagens e as dúvidas mais comuns.</p>
+    </section>
+
+    <section class="d-flex flex-column gap-3 mb-4" aria-label="Busca e filtros">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-8">
+          <label class="form-label" for="busca">Buscar jogo</label>
+          <input class="form-control campo-busca" type="search" id="busca" placeholder="Ex.: Zelda, Metal Gear, Chrono">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label" for="ordem">Ordenar</label>
+          <select class="form-select campo-busca" id="ordem">
+            <option value="nome">Alfabeticamente</option>
+            <option value="ano">Ano de lançamento</option>
+            <option value="console">Console</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2" id="filtros"></div>
+    </section>
+
+    <p class="contador" id="contador">TODOS OS JOGOS</p>
+    <div class="alert alert-escuro d-none" id="aviso-vazio" role="alert">
+      Nenhum jogo encontrado. Tente outro nome ou escolha "Todos" nos consoles.
+    </div>
+    <div class="grade-capas" id="grade"></div>
+  </main>
+
+  <footer id="rodape">
+    <div class="container py-4 d-flex flex-wrap gap-3 justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <img class="pixelado" src="img/logo.png" alt="">
+        <span>© 2026 jogoveio.com · Vinicius Vidal e Rafael Chiminello</span>
+      </div>
+      <div class="d-flex gap-4">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/biblioteca.js"></script>
+</body>
+</html>

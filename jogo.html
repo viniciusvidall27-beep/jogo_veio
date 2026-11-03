@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia do jogo | Jogo Véio</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    #capa-jogo {
+      width: 220px;
+      border: 4px solid var(--preto);
+      box-shadow: 8px 8px 0 var(--amarelo);
+    }
+
+    .etiqueta {
+      background-color: var(--superficie);
+      padding: 0.35rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .bloco-texto {
+      background-color: var(--superficie);
+      padding: 1.75rem;
+      height: 100%;
+    }
+
+    .bloco-verde {
+      border-top: 6px solid var(--verde);
+    }
+
+    .bloco-amarelo {
+      border-top: 6px solid var(--amarelo);
+    }
+
+    .bloco-texto p {
+      color: var(--texto-suave);
+      max-width: 70ch;
+    }
+
+    .grade-imagens {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .grade-imagens img,
+    .sem-imagem {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 3px solid var(--preto);
+    }
+
+    .sem-imagem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--fundo-escuro);
+      border: 3px dashed var(--borda);
+      color: var(--texto-apagado);
+      font-size: 0.85rem;
+    }
+
+    .accordion {
+      --bs-accordion-bg: var(--superficie);
+      --bs-accordion-color: var(--texto);
+      --bs-accordion-border-color: var(--preto);
+      --bs-accordion-btn-color: var(--texto);
+      --bs-accordion-btn-bg: var(--superficie);
+      --bs-accordion-active-bg: var(--superficie-2);
+      --bs-accordion-active-color: var(--amarelo);
+      --bs-accordion-btn-focus-box-shadow: 0 0 0 3px var(--amarelo);
+    }
+
+    .accordion-button {
+      font-family: var(--fonte-texto);
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    .accordion-button::after {
+      filter: invert(1);
+    }
+
+    #assistente {
+      background-color: var(--fundo-escuro);
+      border: 3px solid var(--preto);
+      box-shadow: 8px 8px 0 var(--verde);
+    }
+
+    .assistente-topo {
+      background-color: var(--verde);
+      color: var(--preto);
+    }
+
+    #mensagens {
+      min-height: 200px;
+      max-height: 420px;
+      overflow-y: auto;
+    }
+
+    .msg {
+      max-width: 40rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .msg-veio {
+      background-color: var(--superficie);
+    }
+
+    .msg-pensando {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      width: fit-content;
+      color: var(--texto-apagado);
+      font-size: 0.9rem;
+    }
+
+    .msg-pensando img {
+      image-rendering: pixelated;
+    }
+
+    .msg-voce {
+      background-color: var(--amarelo);
+      color: var(--fundo-escuro);
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+  <header id="topo">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-2">
+      <a class="marca" href="index.html">
+        <img class="pixelado" src="img/logo.png" alt="Logo do Jogo Véio: gaúcho em pixel art segurando um espeto">
+        <span class="marca-nome">JOGO<br><span>VÉIO</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="menu-link d-block" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="menu-link d-block ativo" href="biblioteca.html">Biblioteca</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="consoles.html">Consoles</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="midia.html">Mídia</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="minha-lista.html">Minha lista</a></li>
+          <li class="nav-item dropdown">
+            <a class="menu-link d-block dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="comparativo.html">Comparativo</a></li>
+              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://retroachievements.org" target="_blank" rel="noopener">RetroAchievements</a></li>
+              <li><a class="dropdown-item" href="https://github.com" target="_blank" rel="noopener">GitHub do projeto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-4">
+    <nav aria-label="Caminho">
+      <p class="texto-apagado small"><a href="biblioteca.html">Biblioteca</a> / <span id="caminho-nome">Jogo</span></p>
+    </nav>
+
+    <div class="alert alert-warning d-none" id="aviso-erro" role="alert">
+      Esse jogo não está na biblioteca. <a class="alert-link" href="biblioteca.html">Voltar para a biblioteca</a>
+    </div>
+
+    <div id="conteudo-jogo">
+      <section class="d-flex flex-wrap align-items-end gap-4 mb-5">
+        <img id="capa-jogo" src="img/capas/zelda.jpg" alt="">
+        <div class="d-flex flex-column gap-3" style="flex: 1 1 26rem;">
+          <h1 class="m-0" id="nome-jogo">Carregando...</h1>
+          <div class="d-flex flex-wrap gap-2" id="etiquetas"></div>
+          <div class="d-flex flex-wrap gap-3">
+            <button class="botao-pixel botao-amarelo" type="button" id="botao-lista">+ Minha lista</button>
+            <a class="botao-pixel botao-escuro" href="#assistente">Perguntar ao Véio</a>
+          </div>
+          <div class="alert alert-success py-2 m-0 d-none" id="aviso-lista" role="status"></div>
+        </div>
+      </section>
+
+      <section class="row g-4 mb-5">
+        <div class="col-lg-5">
+          <div class="bloco-texto bloco-verde">
+            <h2>Prólogo</h2>
+            <p class="m-0" id="prologo"></p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="bloco-texto bloco-amarelo">
+            <h2>História principal</h2>
+            <div id="historia"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h2>Imagens do jogo</h2>
+        <div class="grade-imagens" id="imagens"></div>
+      </section>
+
+      <section class="mb-5">
+        <h2>Principais dúvidas</h2>
+        <div class="accordion" id="duvidas"></div>
+      </section>
+
+      <section id="assistente" class="mb-4">
+        <div class="assistente-topo d-flex align-items-center gap-3 p-3">
+          <img class="pixelado" src="img/logo.png" alt="" width="48" height="48">
+          <div>
+            <h2 class="m-0" style="font-size: 0.9rem;">Assistente Véio</h2>
+            <span class="small">Pergunte sobre chefes, itens, história e personagens</span>
+          </div>
+        </div>
+        <div class="p-3" id="mensagens" aria-live="polite"></div>
+        <form class="d-flex flex-wrap gap-2 p-3 pt-0" id="form-assistente">
+          <label class="visually-hidden" for="pergunta">Sua dúvida</label>
+          <input class="form-control campo-busca" style="flex: 1 1 18rem;" type="text" id="pergunta" placeholder="Ex.: como vencer o chefe final?" required minlength="2">
+          <button class="btn btn-warning fw-bold px-4" type="submit">Perguntar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer id="rodape">
+    <div class="container py-4 d-flex flex-wrap gap-3 justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <img class="pixelado" src="img/logo.png" alt="">
+        <span>© 2026 jogoveio.com · Vinicius Vidal e Rafael Chiminello</span>
+      </div>
+      <div class="d-flex gap-4">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/assistente.js"></script>
+  <script src="js/jogo.js"></script>
+</body>
+</html>

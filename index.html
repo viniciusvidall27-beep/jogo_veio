@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Véio | Guia de jogos retrô</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-2">
+      <a class="marca" href="index.html">
+        <img class="pixelado" src="img/logo.png" alt="Logo do Jogo Véio: gaúcho em pixel art segurando um espeto">
+        <span class="marca-nome">JOGO<br><span>VÉIO</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="menu-link d-block ativo" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="biblioteca.html">Biblioteca</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="consoles.html">Consoles</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="midia.html">Mídia</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="minha-lista.html">Minha lista</a></li>
+          <li class="nav-item dropdown">
+            <a class="menu-link d-block dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="comparativo.html">Comparativo</a></li>
+              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://retroachievements.org" target="_blank" rel="noopener">RetroAchievements</a></li>
+              <li><a class="dropdown-item" href="https://github.com" target="_blank" rel="noopener">GitHub do projeto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="destaque">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between gap-5">
+        <div class="d-flex flex-column gap-4" style="flex: 1 1 30rem;">
+          <p class="destaque-sub m-0">GUIA DE JOGOS RETRÔ</p>
+          <h1 class="m-0">Travou no chefão?<br>O Véio te ajuda.</h1>
+          <p class="texto-suave fs-5 m-0" style="max-width: 34rem;">Itens escondidos, magias, mapas e estratégias contra chefes dos clássicos do NES, Super Nintendo, Mega Drive e PlayStation.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="botao-pixel botao-amarelo" href="biblioteca.html">Ver biblioteca</a>
+            <a class="botao-pixel botao-escuro" href="jogo.html?id=zelda#assistente">Perguntar ao Véio</a>
+          </div>
+        </div>
+        <div class="moldura-logo mx-auto mx-lg-0">
+          <img class="pixelado" src="img/logo.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa-consoles py-3" aria-label="Filtrar por console">
+      <div class="container d-flex flex-wrap align-items-center gap-2">
+        <span class="texto-apagado me-2">Ver por console:</span>
+        <a class="pilula" href="biblioteca.html?console=NES">NES</a>
+        <a class="pilula" href="biblioteca.html?console=Super Nintendo">Super Nintendo</a>
+        <a class="pilula" href="biblioteca.html?console=Mega Drive">Mega Drive</a>
+        <a class="pilula" href="biblioteca.html?console=Nintendo 64">Nintendo 64</a>
+        <a class="pilula" href="biblioteca.html?console=PlayStation">PlayStation</a>
+        <a class="pilula" href="biblioteca.html?console=PlayStation 2">PlayStation 2</a>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-2">
+        <h2>Guias em destaque</h2>
+        <a href="biblioteca.html">Ver todos os jogos</a>
+      </div>
+      <div class="row g-4" id="destaques"></div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <h2>Dúvidas mais buscadas</h2>
+          <div class="lista-duvidas" id="duvidas-populares"></div>
+        </div>
+        <aside class="col-lg-4">
+          <div class="caixa-assistente d-flex flex-column gap-3">
+            <img class="pixelado" src="img/logo.png" alt="" width="72" height="72">
+            <h2 class="m-0">Não achou sua dúvida?</h2>
+            <p class="m-0">Escreve pro Assistente Véio na página do jogo. Ele procura nos guias do site e, se não souber, te manda pra uma pesquisa no Google.</p>
+            <a class="botao-pixel botao-escuro align-self-start" href="biblioteca.html">Escolher um jogo</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="container py-4 d-flex flex-wrap gap-3 justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <img class="pixelado" src="img/logo.png" alt="">
+        <span>© 2026 jogoveio.com · Vinicius Vidal e Rafael Chiminello</span>
+      </div>
+      <div class="d-flex gap-4">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>
