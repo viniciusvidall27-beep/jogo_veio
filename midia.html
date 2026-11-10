@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídia | Jogo Véio</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-2">
+      <a class="marca" href="index.html">
+        <img class="pixelado" src="img/logo.png" alt="Logo do Jogo Véio: gaúcho em pixel art segurando um espeto">
+        <span class="marca-nome">JOGO<br><span>VÉIO</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="menu-link d-block" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="biblioteca.html">Biblioteca</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="consoles.html">Consoles</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="menu-link d-block ativo" href="midia.html">Mídia</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="minha-lista.html">Minha lista</a></li>
+          <li class="nav-item dropdown">
+            <a class="menu-link d-block dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="comparativo.html">Comparativo</a></li>
+              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://retroachievements.org" target="_blank" rel="noopener">RetroAchievements</a></li>
+              <li><a class="dropdown-item" href="https://github.com/viniciusvidall27-beep/jogo_veio" target="_blank" rel="noopener">GitHub do projeto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-5">
+    <section class="mb-5">
+      <h1>Mídia</h1>
+      <p class="texto-suave fs-5 m-0">Todas as trilhas sonoras e vídeos do site num lugar só.</p>
+    </section>
+
+    <section class="mb-5" aria-labelledby="titulo-radio">
+      <h2 id="titulo-radio">Rádio do Véio</h2>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <article class="radio-tocando">
+            <img class="radio-capa" id="radio-capa" src="img/logo.png" alt="">
+            <p class="rotulo-radio" id="radio-estado">PRONTO PARA TOCAR</p>
+            <h3 class="radio-musica" id="radio-musica">Escolha uma música</h3>
+            <p class="texto-apagado m-0" id="radio-jogo"></p>
+            <audio class="w-100 my-3" id="radio-audio" controls preload="none"></audio>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-outline-light" type="button" id="radio-anterior" aria-label="Música anterior">◀ Anterior</button>
+              <button class="btn btn-outline-light" type="button" id="radio-proxima" aria-label="Próxima música">Próxima ▶</button>
+              <a class="btn btn-warning fw-bold ms-auto" id="radio-guia" href="biblioteca.html">Abrir guia</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-7">
+          <p class="contador" id="radio-contador">0 FAIXAS</p>
+          <ol class="lista-radio" id="lista-radio"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-videos">
+      <h2 id="titulo-videos">Vídeos</h2>
+      <div class="alert alert-escuro d-none" id="sem-videos" role="status">Ainda não há vídeos no site.</div>
+      <div class="row g-4" id="lista-videos"></div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="container py-4 d-flex flex-wrap gap-3 justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <img class="pixelado" src="img/logo.png" alt="">
+        <span>© 2026 jogoveio.com · Vinicius Vidal e Rafael Chiminello</span>
+      </div>
+      <div class="d-flex gap-4">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://github.com/viniciusvidall27-beep/jogo_veio" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/midia.js"></script>
+</body>
+</html>

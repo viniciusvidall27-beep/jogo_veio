@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Jogo Véio</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/puro.css">
+</head>
+<body>
+  <header id="topo">
+    <nav class="barra conteudo" aria-label="Menu principal">
+      <a class="marca" href="index.html">
+        <img class="pixelado" src="img/logo.png" alt="Logo do Jogo Véio: gaúcho em pixel art segurando um espeto">
+        <span class="marca-nome">JOGO<br><span>VÉIO</span></span>
+      </a>
+      <button class="botao-menu" type="button" id="botao-menu" aria-controls="menu-puro" aria-expanded="false" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
+      <ul class="menu-puro" id="menu-puro">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="biblioteca.html">Biblioteca</a></li>
+        <li><a class="menu-link" href="consoles.html">Consoles</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="midia.html">Mídia</a></li>
+        <li><a class="menu-link" href="minha-lista.html">Minha lista</a></li>
+        <li class="menu-mais">
+          <button class="menu-link ativo" type="button" id="botao-mais" aria-controls="submenu" aria-expanded="false">Mais ▾</button>
+          <ul class="submenu" id="submenu">
+            <li><a href="comparativo.html">Comparativo</a></li>
+            <li><a class="ativo" href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><hr></li>
+            <li><a href="https://retroachievements.org" target="_blank" rel="noopener">RetroAchievements</a></li>
+            <li><a href="https://github.com/viniciusvidall27-beep/jogo_veio" target="_blank" rel="noopener">GitHub do projeto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="conteudo secao">
+      <div class="apresentacao">
+        <div class="apresentacao-texto">
+          <p class="destaque-sub">QUEM SOMOS</p>
+          <h1>Sobre o Jogo Véio</h1>
+          <p class="texto-suave" style="font-size: 1.25rem;">O Jogo Véio é um guia de jogos retrô inspirado nas antigas revistas de dicas e nos detonados que passavam de mão em mão. A ideia é simples: quem travou num clássico encontra aqui a resposta rápida, sem precisar atravessar vídeos de meia hora.</p>
+          <p class="texto-suave">Cada jogo tem prólogo, história, imagens, as dúvidas mais comuns e o Assistente Véio, que responde perguntas sobre chefes, itens, segredos e personagens.</p>
+        </div>
+        <div class="moldura-logo">
+          <img class="pixelado" src="img/logo.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa-consoles" aria-label="O site em números">
+      <div class="conteudo numeros secao" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+        <div class="numero">
+          <span class="numero-valor" id="total-jogos">0</span>
+          <span class="numero-rotulo">jogos com guia</span>
+        </div>
+        <div class="numero">
+          <span class="numero-valor" id="total-consoles">0</span>
+          <span class="numero-rotulo">consoles</span>
+        </div>
+        <div class="numero">
+          <span class="numero-valor" id="total-respostas">0</span>
+          <span class="numero-rotulo">respostas do Véio</span>
+        </div>
+        <div class="numero">
+          <span class="numero-valor" id="anos-historia">0</span>
+          <span class="numero-rotulo">anos de história</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="conteudo secao">
+      <h2>Missão, visão e valores</h2>
+      <div class="grade-3">
+        <article class="cartao">
+          <img src="img/capas/zelda.jpg" alt="Capa de The Legend of Zelda">
+          <div class="cartao-corpo">
+            <h3>Missão</h3>
+            <p>Ajudar qualquer jogador a passar daquele trecho em que travou, com respostas curtas e diretas.</p>
+            <a class="botao botao-amarelo-puro" href="biblioteca.html">Ver os guias</a>
+          </div>
+        </article>
+        <article class="cartao">
+          <img src="img/capas/chrono.jpg" alt="Capa de Chrono Trigger">
+          <div class="cartao-corpo">
+            <h3>Visão</h3>
+            <p>Ser o lugar de referência para quem quer jogar ou rejogar os clássicos do NES ao PlayStation 2.</p>
+            <a class="botao botao-amarelo-puro" href="consoles.html">Conhecer os consoles</a>
+          </div>
+        </article>
+        <article class="cartao">
+          <img src="img/capas/mgs.jpg" alt="Capa de Metal Gear Solid">
+          <div class="cartao-corpo">
+            <h3>Valores</h3>
+            <p>Informação correta, linguagem simples e respeito pela história dos jogos e de quem os criou.</p>
+            <a class="botao botao-amarelo-puro" href="contato.html">Sugerir um jogo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="conteudo secao secao-sem-topo">
+      <h2>Equipe</h2>
+      <div class="grade-2">
+        <div class="cartao-equipe" style="display: flex; align-items: center; gap: 1.5rem;">
+          <span class="avatar-pixel" aria-hidden="true">VV</span>
+          <div>
+            <h3 style="margin-bottom: 0.5rem;">Vinicius Vidal</h3>
+            <p class="texto-suave">Programação em JavaScript e lógica do Assistente Véio</p>
+          </div>
+        </div>
+        <div class="cartao-equipe" style="display: flex; align-items: center; gap: 1.5rem;">
+          <span class="avatar-pixel" style="background-color: var(--verde);" aria-hidden="true">RC</span>
+          <div>
+            <h3 style="margin-bottom: 0.5rem;">Rafael Chiminello</h3>
+            <p class="texto-suave">CSS, Bootstrap, imagens e áudios</p>
+          </div>
+        </div>
+      </div>
+      <p class="texto-suave" style="margin-top: 1rem;">Cada um teve um foco, mas os dois participaram de um pouco de tudo no projeto.</p>
+    </section>
+
+    <section class="conteudo secao secao-sem-topo">
+      <div class="alerta alerta-neutro" role="note" style="display: block; margin: 0;">
+        <h2 style="margin-bottom: 0.75rem;">Aviso</h2>
+        <p>O Jogo Véio é um projeto acadêmico, sem fins lucrativos, feito para a disciplina de Desenvolvimento Front-End para Web da Universidade Positivo. Os jogos, nomes, imagens e marcas citados pertencem às suas respectivas empresas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="conteudo rodape-conteudo">
+      <div>
+        <img class="pixelado" src="img/logo.png" alt="">
+        <span>© 2026 jogoveio.com · Vinicius Vidal e Rafael Chiminello</span>
+      </div>
+      <div class="rodape-links">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://github.com/viniciusvidall27-beep/jogo_veio" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/sobre.js"></script>
+</body>
+</html>

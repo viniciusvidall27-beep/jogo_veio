@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Jogo Véio</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-2">
+      <a class="marca" href="index.html">
+        <img class="pixelado" src="img/logo.png" alt="Logo do Jogo Véio: gaúcho em pixel art segurando um espeto">
+        <span class="marca-nome">JOGO<br><span>VÉIO</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="menu-link d-block" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="biblioteca.html">Biblioteca</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="consoles.html">Consoles</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="midia.html">Mídia</a></li>
+          <li class="nav-item"><a class="menu-link d-block" href="minha-lista.html">Minha lista</a></li>
+          <li class="nav-item dropdown">
+            <a class="menu-link d-block dropdown-toggle ativo" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mais</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="comparativo.html">Comparativo</a></li>
+              <li><a class="dropdown-item" href="sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://retroachievements.org" target="_blank" rel="noopener">RetroAchievements</a></li>
+              <li><a class="dropdown-item" href="https://github.com/viniciusvidall27-beep/jogo_veio" target="_blank" rel="noopener">GitHub do projeto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-5">
+    <section class="mb-4">
+      <h1>Contato</h1>
+      <p class="texto-suave fs-5 m-0">Quer um jogo novo no site ou conhece uma dica que o Véio ainda não sabe? Manda pra gente.</p>
+    </section>
+
+    <div class="row g-4">
+      <section class="col-lg-7" aria-labelledby="titulo-form">
+        <form class="caixa-formulario form-contato" id="form-contato" novalidate>
+          <h2 id="titulo-form">Envie sua mensagem</h2>
+          <div id="aviso-contato"></div>
+
+          <div class="mb-3">
+            <label class="form-label" for="contato-nome">Nome</label>
+            <input class="form-control" type="text" id="contato-nome" name="nome" required minlength="3" pattern="[A-Za-zÀ-ÿ ]{3,}" placeholder="Seu nome">
+            <div class="erro-campo">Digite pelo menos 3 letras, sem números.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="contato-email">E-mail</label>
+            <input class="form-control" type="email" id="contato-email" name="email" required placeholder="voce@email.com">
+            <div class="erro-campo">Digite um e-mail válido, como voce@email.com.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="contato-assunto">Assunto</label>
+            <select class="form-select" id="contato-assunto" name="assunto" required>
+              <option value="">Escolha um assunto</option>
+              <option value="Sugerir um jogo novo">Sugerir um jogo novo</option>
+              <option value="Nova dúvida ou resposta">Nova dúvida ou resposta para um jogo</option>
+              <option value="Corrigir uma informação">Corrigir uma informação</option>
+              <option value="Outro assunto">Outro assunto</option>
+            </select>
+            <div class="erro-campo">Escolha um assunto.</div>
+          </div>
+
+          <div class="mb-3 d-none" id="grupo-jogo">
+            <label class="form-label" for="contato-jogo">Qual jogo?</label>
+            <select class="form-select" id="contato-jogo" name="jogo">
+              <option value="">Escolha o jogo</option>
+            </select>
+            <div class="erro-campo">Escolha o jogo.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="contato-mensagem">Mensagem</label>
+            <textarea class="form-control" id="contato-mensagem" name="mensagem" rows="6" required minlength="20" maxlength="1000" placeholder="Ex.: No Super Metroid, dá para pegar os mísseis do começo antes do Morph Ball..."></textarea>
+            <div class="d-flex justify-content-between">
+              <div class="erro-campo">Escreva pelo menos 20 caracteres.</div>
+              <small class="texto-apagado ms-auto" id="contador-mensagem">0/1000</small>
+            </div>
+          </div>
+
+          <button class="btn btn-warning fw-bold px-4" type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+
+      <aside class="col-lg-5">
+        <div class="caixa-assistente d-flex flex-column gap-3 mb-4">
+          <img class="pixelado" src="img/logo.png" alt="" width="72" height="72">
+          <h2 class="m-0">Fala com o Véio</h2>
+          <p class="m-0">Nosso e-mail para sugestões:</p>
+          <a class="botao-pixel botao-escuro align-self-start" href="mailto:jogoveio11@gmail.com">jogoveio11@gmail.com</a>
+        </div>
+        <div class="bloco-contato">
+          <h3 class="fs-6 fw-bold" style="font-family: var(--fonte-texto);">O que você pode mandar</h3>
+          <ul class="m-0">
+            <li>Um jogo retrô que você quer ver no site.</li>
+            <li>Uma dúvida que o Véio não soube responder.</li>
+            <li>Uma dica, curiosidade ou teoria sobre um jogo.</li>
+            <li>Uma correção, se achar alguma informação errada.</li>
+          </ul>
+        </div>
+        <div class="bloco-contato mt-4">
+          <h3 class="fs-6 fw-bold" style="font-family: var(--fonte-texto);">Suas mensagens</h3>
+          <p class="m-0 texto-apagado" id="historico-vazio">Você ainda não enviou nenhuma mensagem.</p>
+          <ul class="lista-historico m-0" id="historico-contato"></ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="rodape">
+    <div class="container py-4 d-flex flex-wrap gap-3 justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <img class="pixelado" src="img/logo.png" alt="">
+        <span>© 2026 jogoveio.com · Vinicius Vidal e Rafael Chiminello</span>
+      </div>
+      <div class="d-flex gap-4">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://github.com/viniciusvidall27-beep/jogo_veio" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+</html>

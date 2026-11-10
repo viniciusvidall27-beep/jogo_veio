@@ -1,0 +1,479 @@
+/*
+  Jogo Véio - jogoveio.com
+  Arquivo: puro.css
+  Descrição: estilos das páginas feitas sem Bootstrap (Sobre e Minha lista): reset básico,
+  menu responsivo, grades, cartões, botões, formulários e alertas próprios.
+  Autores: Vinicius Vidal e Rafael Chiminello
+  Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo - 2026
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.conteudo {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.secao {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.secao-sem-topo {
+  padding-top: 0;
+}
+
+.oculto-leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.pequeno {
+  font-size: 0.875rem;
+}
+
+.barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.botao-menu {
+  display: none;
+  width: 48px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--texto);
+  border: 2px solid var(--borda);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-puro {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.menu-puro .menu-link {
+  display: block;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-mais {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  min-width: 210px;
+  padding: 0.5rem 0;
+  background-color: var(--superficie);
+  border: 2px solid var(--borda);
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.submenu.aberto {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.submenu a:hover,
+.submenu a.ativo {
+  background-color: var(--superficie-2);
+  color: var(--amarelo);
+}
+
+.submenu hr {
+  margin: 0.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--borda);
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.rodape-conteudo div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rodape-links {
+  gap: 1.5rem !important;
+}
+
+.grade-2,
+.grade-3 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grade-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grade-3 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.apresentacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.apresentacao-texto {
+  flex: 1 1 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.apresentacao .moldura-logo {
+  margin: 0 auto;
+}
+
+.numeros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--superficie);
+  border: 3px solid var(--preto);
+  box-shadow: 6px 6px 0 var(--preto);
+}
+
+.cartao img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 3px solid var(--preto);
+}
+
+.cartao-corpo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.cartao-corpo h3 {
+  font-family: var(--fonte-texto);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cartao-corpo p {
+  flex: 1;
+  color: var(--texto-suave);
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.botao-amarelo-puro {
+  background-color: var(--amarelo);
+  color: var(--fundo-escuro);
+}
+
+.botao-amarelo-puro:hover {
+  background-color: var(--amarelo-claro);
+  color: var(--fundo-escuro);
+}
+
+.botao-perigo {
+  background-color: transparent;
+  color: #FF8A8A;
+  border-color: #FF8A8A;
+  font-weight: 400;
+}
+
+.botao-perigo:hover {
+  background-color: var(--vermelho);
+  border-color: var(--vermelho);
+  color: #FFFFFF;
+}
+
+.botao-pequeno {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.875rem;
+}
+
+.rotulo {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--texto-apagado);
+  font-size: 0.9rem;
+}
+
+.campo {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--superficie);
+  color: var(--texto);
+  border: 2px solid var(--borda);
+  border-radius: 4px;
+  transition: border-color 0.15s;
+}
+
+.campo::placeholder {
+  color: var(--texto-apagado);
+}
+
+.campo:hover {
+  border-color: var(--texto-apagado);
+}
+
+.campo:focus {
+  outline: none;
+  border-color: var(--amarelo);
+}
+
+input.campo:invalid:not(:placeholder-shown),
+.campo.campo-erro {
+  border-color: #FF8A8A;
+}
+
+.campo-pequeno {
+  min-height: 38px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+select.campo {
+  appearance: none;
+  padding-right: 2.25rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23F1ECE3' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 14px;
+}
+
+.alerta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid;
+  background-color: var(--superficie);
+}
+
+.alerta-sucesso {
+  border-color: var(--verde);
+}
+
+.alerta-neutro {
+  border-color: var(--texto-apagado);
+}
+
+.alerta-fechar {
+  background: none;
+  border: 0;
+  color: var(--texto);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none !important;
+}
+
+.layout-lista {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.barra-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filtros-linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.item-lista h3 {
+  font-family: var(--fonte-texto);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.item-conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.item-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 576px) {
+  .conteudo {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteudo {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .conteudo {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .conteudo {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .conteudo {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .botao-menu {
+    display: flex;
+  }
+
+  .menu-puro {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 0.5rem;
+  }
+
+  .menu-puro.aberto {
+    display: flex;
+  }
+
+  .submenu {
+    position: static;
+    border: 0;
+    background-color: transparent;
+    padding: 0 0 0 1rem;
+  }
+
+  .layout-lista {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .grade-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .secao {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
