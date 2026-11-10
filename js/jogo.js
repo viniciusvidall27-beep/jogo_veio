@@ -2,12 +2,8 @@
   Jogo Véio - jogoveio.com
   Arquivo: jogo.js
   Descrição: preenche a página do jogo escolhido, controla o botão "Minha lista" (localStorage)
-<<<<<<< HEAD
   inicia o Assistente Véio (arquivo assistente.js), mostra o botão da música do jogo no canto
   inferior direito e coloca o vídeo-dica dentro da resposta da dúvida ligada a ele.
-=======
-  e inicia o Assistente Véio (arquivo assistente.js).
->>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
   Autores: Vinicius Vidal e Rafael Chiminello
   Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo - 2026
 */
@@ -21,13 +17,10 @@ const jogo = jogos.find(function (item) {
 });
 
 const botaoLista = document.getElementById("botao-lista");
-<<<<<<< HEAD
 const tocador = document.getElementById("tocador");
 const painelMusica = document.getElementById("painel-musica");
 const audioJogo = document.getElementById("audio-jogo");
 const botaoMusica = document.getElementById("botao-musica");
-=======
->>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
 const avisoLista = document.getElementById("aviso-lista");
 
 function preencherPagina() {
@@ -90,20 +83,15 @@ function preencherPagina() {
         <div class="accordion-body texto-suave"></div>
       </div>`;
     item.querySelector(".accordion-button").textContent = duvida.pergunta;
-<<<<<<< HEAD
     const corpo = item.querySelector(".accordion-body");
     corpo.textContent = duvida.resposta;
     if (jogo.video && jogo.video.pergunta === duvida.pergunta) {
       corpo.appendChild(criarVideo(jogo.video));
     }
-=======
-    item.querySelector(".accordion-body").textContent = duvida.resposta;
->>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     areaDuvidas.appendChild(item);
   });
 }
 
-<<<<<<< HEAD
 function criarVideo(video) {
   const figura = document.createElement("figure");
   figura.className = "video-dica";
@@ -141,8 +129,6 @@ function alternarMusica() {
   }
 }
 
-=======
->>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
 function lerLista() {
   const salvo = localStorage.getItem(CHAVE_LISTA);
   if (salvo === null) {
@@ -193,7 +179,6 @@ if (jogo) {
   preencherPagina();
   atualizarBotaoLista();
   iniciarAssistente(jogo);
-<<<<<<< HEAD
   prepararMusica();
   botaoLista.addEventListener("click", alternarLista);
   botaoMusica.addEventListener("click", alternarMusica);
@@ -203,9 +188,6 @@ if (jogo) {
   audioJogo.addEventListener("pause", function () {
     botaoMusica.classList.remove("tocando");
   });
-=======
-  botaoLista.addEventListener("click", alternarLista);
->>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
 } else {
   document.getElementById("conteudo-jogo").classList.add("d-none");
   document.getElementById("aviso-erro").classList.remove("d-none");
