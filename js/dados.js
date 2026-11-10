@@ -50,10 +50,14 @@ const jogos = [
       { pergunta: "Por que o cartucho era dourado?", chaves: ["dourado", "cartucho", "salvar no cartucho", "bateria", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: nos EUA o jogo saiu num cartucho dourado e foi um dos primeiros com bateria para salvar o progresso." },
       { pergunta: "Onde fica a dungeon 9?", chaves: ["dungeon 9", "nivel 9", "death mountain"], resposta: "Na Death Mountain. A entrada só libera quem já juntou os oito pedaços da Triforce." },
       { pergunta: "Para que serve o anel azul?", chaves: ["anel azul", "blue ring", "anel"], resposta: "Ele reduz o dano que o Link recebe. É vendido numa loja e custa caro, então junte rupias antes." },
+<<<<<<< HEAD
       { pergunta: "Como derrotar o Aquamentus?", chaves: ["aquamentus", "dragao", "chefe da dungeon 1"], resposta: "É o dragão da dungeon 1. Desvie das três bolas de fogo e acerte a cabeça dele com a espada." },
       { pergunta: "Quantos corações o Link pode ter?", chaves: ["quantos coracoes", "maximo de coracoes", "coracoes"], resposta: "Até 16 corações, juntando os containers dos chefes e os que ficam escondidos pelo mapa." },
       { pergunta: "Qual é a música mais famosa do Zelda?", chaves: ["musica famosa", "tema", "overworld"], resposta: "O tema do mundo aberto (Overworld Theme), composto por Koji Kondo. Ele virou a música símbolo da série e aparece em vários jogos depois." },
       { pergunta: "Quem compôs a música do Zelda?", chaves: ["quem compos", "compositor", "koji kondo"], resposta: "Koji Kondo, o mesmo compositor das músicas do Super Mario Bros." }
+=======
+      { pergunta: "Como derrotar o Aquamentus?", chaves: ["aquamentus", "dragao", "chefe da dungeon 1"], resposta: "É o dragão da dungeon 1. Desvie das três bolas de fogo e acerte a cabeça dele com a espada." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -109,8 +113,11 @@ const jogos = [
     genero: "Ação e aventura",
     cor: "#3D7A2A",
     capa: "A LINK TO THE PAST",
+<<<<<<< HEAD
     musica: { arquivo: "audio/alttp.mp3", titulo: "Overworld Theme" },
     video: { titulo: "Como pegar a Master Sword", pergunta: "Onde pego a Master Sword?", arquivo: "video/alttp-master-sword.mp4", capa: "video/alttp-master-sword.jpg" },
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     vilao: "o mago Agahnim e, por trás dele, Ganon",
     personagens: ["Link", "Princesa Zelda", "Sahasrahla", "Agahnim", "Ganon"],
     piadas: ["O Link vira coelho no Mundo Sombrio. Eu viro coelho é na segunda-feira de manhã, tchê.", "Quatro garrafas pra guardar fada. Eu tenho quatro garrafas também, mas é de chimarrão.", "O tio do Link sai na chuva com espada e escudo e fala 'não sai de casa'. Clássico tio gaúcho."],
@@ -142,9 +149,13 @@ const jogos = [
       { pergunta: "Quantas garrafas existem?", chaves: ["garrafa", "garrafas", "bottle"], resposta: "Quatro. Elas guardam fadas e poções, que salvam o Link quando a vida acaba." },
       { pergunta: "O que é a sala do Chris Houlihan?", chaves: ["chris houlihan", "sala secreta", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: é uma sala secreta com rupias, batizada com o nome de um garoto que ganhou um concurso de uma revista da Nintendo." },
       { pergunta: "O que fazem os medalhões?", chaves: ["medalhao", "bombos", "ether", "quake"], resposta: "Cada um ataca todos os inimigos da tela: Bombos com fogo, Ether com gelo e raios e Quake com um terremoto. Também abrem algumas entradas." },
+<<<<<<< HEAD
       { pergunta: "Onde pego a lanterna?", chaves: ["lanterna", "lamp", "luz", "escuro"], resposta: "Num baú dentro da casa do Link, logo no começo. Ela ilumina os lugares escuros e acende tochas." },
       { pergunta: "O que são os Bosques Perdidos?", chaves: ["bosques perdidos", "lost woods", "floresta"], resposta: "É a floresta a noroeste de Hyrule, cheia de neblina e ladrões. No fundo dela fica o pedestal da Master Sword." },
       { pergunta: "Qual música do jogo eu posso ouvir aqui?", chaves: ["musica do jogo", "trilha sonora", "trilha", "ouvir", "tocar musica"], resposta: "Aqui no site dá para ouvir o Overworld Theme. É só clicar no botão da nota musical, no canto inferior direito da tela." }
+=======
+      { pergunta: "Onde pego a lanterna?", chaves: ["lanterna", "lamp", "luz", "escuro"], resposta: "Num baú dentro da casa do Link, logo no começo. Ela ilumina os lugares escuros e acende tochas." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -157,7 +168,10 @@ const jogos = [
     genero: "Ação e exploração",
     cor: "#5B2A6E",
     capa: "SYMPHONY OF THE NIGHT",
+<<<<<<< HEAD
     musica: { arquivo: "audio/sotn.mp3", titulo: "The Tragic Prince (arranjo de Akira Yamaoka)" },
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     vilao: "o sacerdote Shaft, que quer trazer Drácula de volta",
     personagens: ["Alucard", "Maria Renard", "Richter Belmont", "Shaft", "Drácula"],
     piadas: ["O Alucard descobriu que o castelo do pai tinha um andar de cabeça pra baixo. Imagina o preço dessa reforma.", "Drácula diz que o homem é um monte de segredos. O meu segredo é que eu ainda não achei os 200,6%.", "Alucard é Dracula ao contrário. Meu nome ao contrário é Oiév, e nem por isso viro vampiro."],
@@ -186,9 +200,13 @@ const jogos = [
       { pergunta: "Dá pra jogar com a Maria?", chaves: ["jogar com maria", "maria jogavel", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Não na versão original de PlayStation. Ela é jogável em outras versões, como a de Sega Saturn e a do PSP." },
       { pergunta: "O Alucard já apareceu antes?", chaves: ["alucard antes", "castlevania iii", "primeira aparicao", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Sim. Ele estreou em Castlevania III: Dracula's Curse, do NES, ajudando um Belmont contra o próprio pai." },
       { pergunta: "O que são as relíquias?", chaves: ["reliquia", "reliquias", "habilidade", "pulo duplo"], resposta: "São itens que dão habilidades novas ao Alucard, como o pulo duplo e as transformações. Elas abrem caminhos no castelo." },
+<<<<<<< HEAD
       { pergunta: "Quem é a Lisa?", chaves: ["lisa", "mae do alucard"], resposta: "É a mãe do Alucard, morta acusada de bruxaria. A morte dela é o motivo da fúria do Drácula contra a humanidade." },
       { pergunta: "Qual música do jogo eu posso ouvir aqui?", chaves: ["musica do jogo", "trilha sonora", "trilha", "ouvir", "tocar musica"], resposta: "Aqui no site dá para ouvir The Tragic Prince. É só clicar no botão da nota musical, no canto inferior direito da tela." },
       { pergunta: "Quem é o Shaft?", chaves: ["shaft", "sacerdote"], resposta: "É o sacerdote das trevas que controla o Richter e quer trazer o Drácula de volta. É ele quem planeja tudo por trás da volta do castelo." }
+=======
+      { pergunta: "Quem é a Lisa?", chaves: ["lisa", "mae do alucard"], resposta: "É a mãe do Alucard, morta acusada de bruxaria. A morte dela é o motivo da fúria do Drácula contra a humanidade." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -201,7 +219,10 @@ const jogos = [
     genero: "RPG",
     cor: "#1F6E8C",
     capa: "CHRONO TRIGGER",
+<<<<<<< HEAD
     musica: { arquivo: "audio/chrono.mp3", titulo: "Corridors of Time" },
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     vilao: "Lavos, a criatura que destrói o mundo em 1999",
     personagens: ["Crono", "Marle", "Lucca", "Frog", "Robo", "Ayla", "Magus"],
     piadas: ["O Crono não fala nada o jogo inteiro e todo mundo segue ele. Liderança de verdade é isso aí.", "Viajam pelo tempo inteiro e ninguém pensou em voltar no dia da prova pra estudar mais.", "O Crono morre e o jogo continua. Primeiro protagonista que tirou folga no meio do expediente."],
@@ -233,10 +254,14 @@ const jogos = [
       { pergunta: "Quem é o Robo?", chaves: ["robo", "robô", "prometheus"], resposta: "É um robô encontrado em ruínas no futuro e consertado pela Lucca. Ele vira um dos aliados mais fiéis do grupo." },
       { pergunta: "Quem é a Lucca?", chaves: ["lucca", "inventora"], resposta: "É a inventora amiga do Crono. Foi a máquina de teletransporte dela que abriu o primeiro portal no tempo." },
       { pergunta: "Quem é a Schala?", chaves: ["schala", "princesa", "irma do magus"], resposta: "É a princesa de Zeal e irmã do Magus. O destino dela é um dos mistérios que continuam no Chrono Cross." },
+<<<<<<< HEAD
       { pergunta: "A Kid do Chrono Cross tem ligação com a Schala?", chaves: ["kid", "chrono cross", "ligacao", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Atenção, spoiler do Chrono Cross: tem. A Kid é revelada como um clone da Schala." },
       { pergunta: "Qual música do jogo eu posso ouvir aqui?", chaves: ["musica do jogo", "trilha sonora", "trilha", "ouvir", "tocar musica"], resposta: "Aqui no site dá para ouvir Corridors of Time. É só clicar no botão da nota musical, no canto inferior direito da tela." },
       { pergunta: "O que é a Feira do Milênio?", chaves: ["feira", "milenio", "millennial fair"], resposta: "É a festa do ano 1000 em Guardia, onde o jogo começa. Lá dá para jogar minigames, ganhar Silver Points e conhecer a Marle." },
       { pergunta: "Quem compôs a trilha do Chrono Trigger?", chaves: ["compos", "compositor", "trilha", "mitsuda"], resposta: "Yasunori Mitsuda compôs a maior parte, com ajuda de Nobuo Uematsu (de Final Fantasy) e Noriko Matsueda." }
+=======
+      { pergunta: "A Kid do Chrono Cross tem ligação com a Schala?", chaves: ["kid", "chrono cross", "ligacao", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Atenção, spoiler do Chrono Cross: tem. A Kid é revelada como um clone da Schala." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -278,8 +303,12 @@ const jogos = [
       { pergunta: "Quem criou os Robot Masters?", chaves: ["quem criou", "concurso", "fas criaram", "desenho", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: a Capcom fez concursos com os fãs, e os chefes do Mega Man 4 vieram de desenhos enviados por eles." },
       { pergunta: "Como passar dos espinhos?", chaves: ["espinho", "espinhos"], resposta: "Espinhos matam na hora. Use o Rush Coil ou o Rush Jet para passar por cima, ou espere o ritmo certo das plataformas." },
       { pergunta: "Qual a arma mais útil?", chaves: ["melhor arma", "arma mais util", "pharaoh shot"], resposta: "Muita gente considera a Pharaoh Shot a mais útil: dá para carregar e mirar em várias direções." },
+<<<<<<< HEAD
       { pergunta: "Quem é o Dr. Wily?", chaves: ["wily", "dr wily", "cientista malvado"], resposta: "É o cientista rival do Dr. Light e o vilão de quase todos os Mega Man clássicos." },
       { pergunta: "Quem é o Dr. Cossack?", chaves: ["quem e o cossack", "dr cossack", "russo"], resposta: "É o cientista russo que parece ser o vilão no começo. Ele só atacou porque o Dr. Wily sequestrou a filha dele, a Kalinka." }
+=======
+      { pergunta: "Quem é o Dr. Wily?", chaves: ["wily", "dr wily", "cientista malvado"], resposta: "É o cientista rival do Dr. Light e o vilão de quase todos os Mega Man clássicos." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -292,7 +321,10 @@ const jogos = [
     genero: "RPG",
     cor: "#3A3F8F",
     capa: "FINAL FANTASY",
+<<<<<<< HEAD
     musica: { arquivo: "audio/ff1.mp3", titulo: "Matoya's Cave (versão Pixel Remaster)" },
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     vilao: "Garland, que no fim vira Chaos",
     personagens: ["os quatro Guerreiros da Luz", "Garland", "Bahamut", "os Demônios Elementais"],
     piadas: ["Quatro guerreiros sem nome escolhidos pela profecia. Igual time de várzea: aparece quem tá disponível.", "O Garland ficou preso num ciclo de 2000 anos. Eu fico preso é no ciclo de acordar, trabalhar e dormir.", "O Black Mage tem um chapéu enorme e um rosto que ninguém vê. Mistério maior que o meu saldo no fim do mês."],
@@ -320,12 +352,16 @@ const jogos = [
       { pergunta: "Qual a fraqueza dos Demônios Elementais?", chaves: ["fraqueza", "lich", "marilith", "kraken", "tiamat"], resposta: "Lich é fraco contra fogo, Marilith contra gelo e Kraken contra raio. Tiamat não tem fraqueza marcada." },
       { pergunta: "O que é o loop do Garland?", chaves: ["loop", "ciclo", "2000 anos", "garland", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "O Garland mandou os Demônios Elementais ao futuro, e eles o mandam de volta ao passado, num ciclo de 2000 anos que o mantém vivo como Chaos. Os heróis quebram esse ciclo." },
       { pergunta: "Onde fica o Lich?", chaves: ["lich", "caverna da terra", "earth cave"], resposta: "No fundo da Caverna da Terra. Leve magias de fogo, porque ele é fraco contra fogo." },
+<<<<<<< HEAD
       { pergunta: "Quem é o Astos?", chaves: ["astos", "coroa", "elfo negro"], resposta: "É o rei dos elfos negros. Ele engana o grupo pedindo uma coroa e depois revela quem é de verdade." },
       { pergunta: "Qual música do jogo eu posso ouvir aqui?", chaves: ["musica do jogo", "trilha sonora", "trilha", "ouvir", "tocar musica"], resposta: "Aqui no site dá para ouvir Matoya's Cave. É só clicar no botão da nota musical, no canto inferior direito da tela." },
       { pergunta: "Onde fica Pravoka?", chaves: ["pravoka", "cidade do porto"], resposta: "É a cidade portuária a leste de Cornelia, do outro lado da ponte. É lá que estão os piratas do Bikke." },
       { pergunta: "Quem é o Bikke?", chaves: ["bikke", "pirata"], resposta: "É o capitão pirata que aterroriza Pravoka. Depois de perder a luta, ele entrega o navio para o grupo." },
       { pergunta: "Quem é a Matoya?", chaves: ["matoya", "bruxa", "vassoura"], resposta: "É uma bruxa cega que mora numa caverna ao norte de Pravoka, cercada de vassouras que falam. Ela perdeu o cristal, o olho dela, e em troca dá a erva que acorda o príncipe elfo." },
       { pergunta: "Quem compôs a música do Final Fantasy?", chaves: ["quem compos", "compositor", "uematsu"], resposta: "Nobuo Uematsu, que depois fez a trilha de vários outros Final Fantasy." }
+=======
+      { pergunta: "Quem é o Astos?", chaves: ["astos", "coroa", "elfo negro"], resposta: "É o rei dos elfos negros. Ele engana o grupo pedindo uma coroa e depois revela quem é de verdade." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -371,8 +407,12 @@ const jogos = [
       { pergunta: "Quem é o Cait Sith?", chaves: ["cait sith", "gato", "reeve"], resposta: "Atenção, spoiler: é um gato robô controlado pelo Reeve, da Shinra, que começa como espião e depois ajuda o grupo de verdade." },
       { pergunta: "A Jenova é a mãe do Sephiroth?", chaves: ["jenova", "mae do sephiroth", "lucrecia", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Ele acredita que sim, mas a mãe biológica é a cientista Lucrecia. Isso aparece numa cena opcional ligada ao Vincent." },
       { pergunta: "Quem é o Barret?", chaves: ["barret", "braco", "arma"], resposta: "É o líder do AVALANCHE, com uma arma no lugar do braço. Ele luta para dar um futuro melhor à filha, Marlene." },
+<<<<<<< HEAD
       { pergunta: "Quem é a Tifa?", chaves: ["tifa", "7th heaven", "amiga de infancia"], resposta: "É a amiga de infância do Cloud, lutadora e dona do bar 7th Heaven, esconderijo do AVALANCHE." },
       { pergunta: "O FF7 saiu só para PlayStation?", chaves: ["playstation", "console", "plataforma", "porque playstation", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: a série era da Nintendo até então, mas a Square escolheu o PlayStation porque o CD cabia muito mais conteúdo que o cartucho do Nintendo 64." }
+=======
+      { pergunta: "Quem é a Tifa?", chaves: ["tifa", "7th heaven", "amiga de infancia"], resposta: "É a amiga de infância do Cloud, lutadora e dona do bar 7th Heaven, esconderijo do AVALANCHE." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -413,8 +453,12 @@ const jogos = [
       { pergunta: "Quem é o Klubba?", chaves: ["klubba", "quiosque", "pedagio"], resposta: "É o Kremling grandalhão que guarda o caminho para o Lost World. Ele cobra Kremkoins para deixar você passar." },
       { pergunta: "Quem é a Dixie?", chaves: ["dixie", "namorada", "planar"], resposta: "É a namorada do Diddy. Ela gira o rabo de cavalo para planar e ainda dá para usar o cabelo como arma." },
       { pergunta: "Quem é o Kaptain K. Rool?", chaves: ["kaptain", "k rool", "pirata"], resposta: "É o Rei K. Rool vestido de pirata. Ele sequestra o Donkey Kong e é o chefe final." },
+<<<<<<< HEAD
       { pergunta: "Como ganhar vidas?", chaves: ["vida", "vidas", "balao", "kong"], resposta: "Pegue os balões vermelhos e junte as letras K-O-N-G em cada fase. As bananas também dão vida a cada 100." },
       { pergunta: "Quem é o Funky Kong?", chaves: ["funky", "surfista", "aviao"], resposta: "É o Kong surfista que tem um serviço de voo. Com ele, a dupla viaja para mundos já visitados." }
+=======
+      { pergunta: "Como ganhar vidas?", chaves: ["vida", "vidas", "balao", "kong"], resposta: "Pegue os balões vermelhos e junte as letras K-O-N-G em cada fase. As bananas também dão vida a cada 100." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -427,7 +471,10 @@ const jogos = [
     genero: "Plataforma",
     cor: "#1E5FB3",
     capa: "SONIC 3 & KNUCKLES",
+<<<<<<< HEAD
     musica: { arquivo: "audio/s3k.mp3", titulo: "The Doomsday Zone" },
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     vilao: "o Dr. Robotnik",
     personagens: ["Sonic", "Tails", "Knuckles", "Dr. Robotnik"],
     piadas: ["O Knuckles caiu na conversa do Robotnik. Esse aí comprava até terreno na lua.", "O jogo veio dividido em dois cartuchos. Igual eu no fim do mês: metade num lugar, metade no outro.", "O Robotnik faz um robô gigante por jogo. Com esse dinheiro já tinha comprado a ilha."],
@@ -457,10 +504,14 @@ const jogos = [
       { pergunta: "O Knuckles é o último da espécie?", chaves: ["ultimo equidna", "equidna", "especie", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Pela história da série, ele é o último descendente do povo equidna que vivia na Angel Island." },
       { pergunta: "Qual a primeira fase?", chaves: ["primeira fase", "primeira zona", "angel island"], resposta: "A Angel Island Zone, uma floresta que pega fogo no meio da fase." },
       { pergunta: "Quem é o Tails?", chaves: ["tails", "raposa"], resposta: "É a raposa de duas caudas, amigo do Sonic. Ele gira as caudas para voar e carregar o Sonic." },
+<<<<<<< HEAD
       { pergunta: "O que é o Hidden Palace?", chaves: ["hidden palace", "templo"], resposta: "É o templo da Master Emerald, escondido na Angel Island. É lá que as esmeraldas viram Super Esmeraldas." },
       { pergunta: "Sonic 3 saiu no Brasil?", chaves: ["brasil", "tectoy"], resposta: "Saiu. No Brasil, os jogos e o Mega Drive eram distribuídos pela Tectoy." },
       { pergunta: "Qual música do jogo eu posso ouvir aqui?", chaves: ["musica do jogo", "trilha sonora", "trilha", "ouvir", "tocar musica"], resposta: "Aqui no site dá para ouvir The Doomsday Zone. É só clicar no botão da nota musical, no canto inferior direito da tela." },
       { pergunta: "Quem compôs a música do Sonic 3?", chaves: ["compos", "compositor", "musica do sonic"], resposta: "A trilha teve vários compositores da Sega e de fora. Existe uma história famosa de que o Michael Jackson participou, mas a Sega nunca confirmou oficialmente." }
+=======
+      { pergunta: "O que é o Hidden Palace?", chaves: ["hidden palace", "templo"], resposta: "É o templo da Master Emerald, escondido na Angel Island. É lá que as esmeraldas viram Super Esmeraldas." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -501,8 +552,12 @@ const jogos = [
       { pergunta: "Quem fez o Star Fox com a Nintendo?", chaves: ["argonaut", "quem fez", "desenvolvido", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: a britânica Argonaut ajudou a desenvolver o jogo e o chip Super FX." },
       { pergunta: "Como vencer o Andross?", chaves: ["andross", "chefe final"], resposta: "Ataque os pontos que ficam expostos quando ele abre o rosto e desvie das peças que ele lança. Bombas ajudam muito." },
       { pergunta: "Quem é o General Pepper?", chaves: ["pepper", "general"], resposta: "É o comandante do exército de Corneria, que chama a equipe Star Fox para enfrentar o Andross." },
+<<<<<<< HEAD
       { pergunta: "Quem é o Falco?", chaves: ["falco", "falcao"], resposta: "É o falcão da equipe, o piloto mais habilidoso e mais convencido do grupo." },
       { pergunta: "Quem é o Peppy?", chaves: ["quem e o peppy", "coelho", "veterano"], resposta: "É o coelho veterano da equipe, o mais experiente. Ele vive dando conselhos durante as fases." }
+=======
+      { pergunta: "Quem é o Falco?", chaves: ["falco", "falcao"], resposta: "É o falcão da equipe, o piloto mais habilidoso e mais convencido do grupo." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -547,8 +602,12 @@ const jogos = [
       { pergunta: "Por que o jogo é famoso em speedrun?", chaves: ["speedrun", "rapido", "zerar rapido", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: o mapa permite pegar itens fora de ordem e usar técnicas como o wall jump. Por isso é um dos jogos mais populares em speedrun." },
       { pergunta: "Quem é o Kraid?", chaves: ["kraid", "chefe gigante"], resposta: "É um chefe gigante que fica no fundo do Brinstar. Depois de derrotá-lo você chega ao Varia Suit." },
       { pergunta: "Quem é a Mother Brain?", chaves: ["mother brain", "cerebro"], resposta: "É o cérebro gigante que comanda os Piratas Espaciais em Zebes. Ela fica em Tourian, a última área." },
+<<<<<<< HEAD
       { pergunta: "Onde fica o Plasma Beam?", chaves: ["plasma", "plasma beam"], resposta: "Em Maridia. É um dos tiros mais fortes do jogo e atravessa os inimigos." },
       { pergunta: "Quem é o Crocomire?", chaves: ["crocomire"], resposta: "É um chefe de Norfair que você empurra para trás com tiros até ele cair na lava. Depois dele você pega o Grapple Beam." }
+=======
+      { pergunta: "Onde fica o Plasma Beam?", chaves: ["plasma", "plasma beam"], resposta: "Em Maridia. É um dos tiros mais fortes do jogo e atravessa os inimigos." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -633,9 +692,13 @@ const jogos = [
       { pergunta: "Como o jogo se chama no Japão?", chaves: ["japao", "mother 2", "nome japones", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Mother 2. É a continuação do Mother, do Famicom." },
       { pergunta: "Quem é o Buzz Buzz?", chaves: ["buzz buzz", "abelha"], resposta: "É uma abelha do futuro que sai do meteorito e avisa o Ness sobre o Giygas." },
       { pergunta: "Quem é a Paula?", chaves: ["paula", "reza"], resposta: "É uma garota de Twoson com poderes psíquicos. O comando de rezar dela é a chave da luta final." },
+<<<<<<< HEAD
       { pergunta: "Quem é o Poo?", chaves: ["poo", "dalaam", "principe"], resposta: "É o príncipe de Dalaam, mestre em artes marciais e em poderes PSI. É o último a entrar no grupo." },
       { pergunta: "Quem é o Jeff?", chaves: ["quem e o jeff", "inventor", "genio"], resposta: "É o garoto inventor do grupo. Ele estuda num colégio interno em Winters e luta com aparelhos que ele mesmo conserta." },
       { pergunta: "O que é Onett?", chaves: ["onett", "cidade natal"], resposta: "É a cidade natal do Ness, onde o meteorito cai e a aventura começa." }
+=======
+      { pergunta: "Quem é o Poo?", chaves: ["poo", "dalaam", "principe"], resposta: "É o príncipe de Dalaam, mestre em artes marciais e em poderes PSI. É o último a entrar no grupo." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -676,8 +739,12 @@ const jogos = [
       { pergunta: "Qual o objetivo do Ryu?", chaves: ["objetivo", "missao", "fazer"], resposta: "Enfrentar o Império dos Dragões Negros, reunir as chaves da deusa antes deles e resgatar a irmã, Sara." },
       { pergunta: "Quem lançou nos EUA?", chaves: ["eua", "americano", "squaresoft", "lancou", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: o jogo é da Capcom, mas foi a Squaresoft que publicou nos Estados Unidos." },
       { pergunta: "Como ganhar dinheiro?", chaves: ["dinheiro", "ouro", "gold", "grana"], resposta: "Derrotando inimigos e vendendo itens e peixes que você pesca." },
+<<<<<<< HEAD
       { pergunta: "O jogo é difícil?", chaves: ["dificil", "dificuldade", "treinar", "nivel"], resposta: "As batalhas aleatórias são frequentes. Vale a pena treinar um pouco antes de cada chefe." },
       { pergunta: "Quem é o Karn?", chaves: ["quem e o karn", "ladrao"], resposta: "É um ladrão que abre fechaduras e desarma armadilhas. Mais tarde aprende a se fundir com outros personagens." }
+=======
+      { pergunta: "O jogo é difícil?", chaves: ["dificil", "dificuldade", "treinar", "nivel"], resposta: "As batalhas aleatórias são frequentes. Vale a pena treinar um pouco antes de cada chefe." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -718,9 +785,13 @@ const jogos = [
       { pergunta: "Qual a frase famosa do Michelangelo?", chaves: ["frase", "cowabunga", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "\"Cowabunga!\". É o grito de comemoração dele." },
       { pergunta: "Turtles in Time tem remake?", chaves: ["remake", "re-shelled", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Tem: Turtles in Time Re-Shelled, de 2009, para Xbox 360 e PlayStation 3, baseado na versão de fliperama." },
       { pergunta: "Quem é o Leatherhead?", chaves: ["leatherhead", "jacare", "jacaré"], resposta: "É um jacaré mutante, um dos chefes que as tartarugas enfrentam." },
+<<<<<<< HEAD
       { pergunta: "Quem é o Destruidor?", chaves: ["quem e o destruidor", "shredder", "cla do pe", "lider"], resposta: "É o líder do Clã do Pé e o maior inimigo das tartarugas e do mestre Splinter." },
       { pergunta: "Quem são Bebop e Rocksteady?", chaves: ["bebop", "rocksteady"], resposta: "São os capangas mutantes do Destruidor: Bebop é um javali e Rocksteady é um rinoceronte." },
       { pergunta: "Quem é o Splinter no jogo?", chaves: ["splinter aparece", "mestre splinter"], resposta: "O mestre Splinter aparece na história como o mentor das tartarugas. É por causa dele que elas sabem artes marciais." }
+=======
+      { pergunta: "Quem é o Destruidor?", chaves: ["quem e o destruidor", "shredder", "cla do pe", "lider"], resposta: "É o líder do Clã do Pé e o maior inimigo das tartarugas e do mestre Splinter." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -765,8 +836,12 @@ const jogos = [
       { pergunta: "Quem é o Coronel Campbell?", chaves: ["campbell", "coronel"], resposta: "É o ex-comandante do Snake, que o chama de volta e o orienta pelo Codec." },
       { pergunta: "De quem o Solid e o Liquid são clones?", chaves: ["clone", "clones", "big boss", "irmaos", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Atenção, spoiler: os dois são clones do Big Boss, criados num projeto chamado Les Enfants Terribles." },
       { pergunta: "Quem é o Revolver Ocelot?", chaves: ["revolver", "ocelot", "pistoleiro"], resposta: "É o pistoleiro da FOXHOUND famoso por girar o revólver. Ele aparece em vários jogos da série." },
+<<<<<<< HEAD
       { pergunta: "Quem é a Sniper Wolf?", chaves: ["quem e a sniper wolf", "sniper wolf", "atiradora", "lobos"], resposta: "É a atiradora de elite da FOXHOUND, que vive cercada de lobos. A luta contra ela é um dos momentos mais lembrados do jogo." },
       { pergunta: "Quantos discos o Metal Gear Solid tem?", chaves: ["discos", "cd", "quantos discos"], resposta: "Dois discos na versão de PlayStation. Na metade do jogo, ele pede para trocar o disco." }
+=======
+      { pergunta: "Quem é a Sniper Wolf?", chaves: ["quem e a sniper wolf", "sniper wolf", "atiradora", "lobos"], resposta: "É a atiradora de elite da FOXHOUND, que vive cercada de lobos. A luta contra ela é um dos momentos mais lembrados do jogo." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -779,7 +854,10 @@ const jogos = [
     genero: "Ação furtiva",
     cor: "#4A5A2A",
     capa: "SNAKE EATER",
+<<<<<<< HEAD
     musica: { arquivo: "audio/mgs3.mp3", titulo: "Snake Eater" },
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     vilao: "o coronel Volgin, com a The Boss do lado dele",
     personagens: ["Naked Snake", "The Boss", "EVA", "Major Zero", "Ocelot", "Volgin", "Sokolov"],
     piadas: ["O Snake come cobra, sapo e cogumelo, e depois reclama da comida do quartel.", "O The End morre de velhice se tu esperar uma semana. É o único chefe que perde pra preguiça.", "O Snake pega resfriado e espirra no meio da missão secreta. Até espião sofre com o inverno."],
@@ -810,9 +888,13 @@ const jogos = [
       { pergunta: "O que ganho ao terminar?", chaves: ["terminar", "recompensa", "patriot"], resposta: "Ao terminar, você ganha o Patriot, a arma da The Boss, com munição infinita." },
       { pergunta: "A abertura parece filme do James Bond?", chaves: ["james bond", "abertura", "musica tema", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: parece de propósito. A música tema e a abertura imitam o estilo dos filmes de espionagem dos anos 60." },
       { pergunta: "Quem é o Volgin?", chaves: ["volgin", "coronel volgin", "eletricidade"], resposta: "É o coronel soviético que controla eletricidade com o corpo e quer usar o Shagohod." },
+<<<<<<< HEAD
       { pergunta: "O que é a Unidade Cobra?", chaves: ["unidade cobra", "cobra", "the pain", "the fear", "the fury"], resposta: "É o grupo de elite comandado pela The Boss: The Pain, The Fear, The End, The Fury e The Sorrow. Cada um é chefe numa parte do jogo." },
       { pergunta: "Qual música do jogo eu posso ouvir aqui?", chaves: ["musica do jogo", "trilha sonora", "trilha", "ouvir", "tocar musica"], resposta: "Aqui no site dá para ouvir Snake Eater. É só clicar no botão da nota musical, no canto inferior direito da tela." },
       { pergunta: "Quem canta a música Snake Eater?", chaves: ["quem canta", "cantora", "snake eater musica", "cynthia"], resposta: "É a cantora Cynthia Harrell. A música imita as aberturas dos filmes de espionagem dos anos 60." }
+=======
+      { pergunta: "O que é a Unidade Cobra?", chaves: ["unidade cobra", "cobra", "the pain", "the fear", "the fury"], resposta: "É o grupo de elite comandado pela The Boss: The Pain, The Fear, The End, The Fury e The Sorrow. Cada um é chefe numa parte do jogo." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -867,7 +949,10 @@ const jogos = [
     genero: "Ação e aventura",
     cor: "#2E6B4A",
     capa: "OCARINA OF TIME",
+<<<<<<< HEAD
     musica: { arquivo: "audio/oot.mp3", titulo: "Gerudo Valley" },
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     vilao: "Ganondorf, o rei dos Gerudo",
     personagens: ["Link", "Navi", "Princesa Zelda", "Sheik", "Ganondorf", "Saria", "Impa"],
     piadas: ["A Navi grita 'Hey! Listen!' o jogo inteiro. É a primeira fada com notificação ativada.", "O Link dormiu sete anos e acordou adulto. Eu durmo sete horas e acordo cansado.", "O Link quebra todo pote de Hyrule e ninguém chama a polícia."],
@@ -895,12 +980,16 @@ const jogos = [
       { pergunta: "Onde pego o Hookshot?", chaves: ["hookshot", "gancho", "dampe"], resposta: "Já adulto, vença a corrida contra o fantasma do Dampé no cemitério de Kakariko." },
       { pergunta: "Quem é a Saria?", chaves: ["saria", "amiga"], resposta: "É a amiga de infância do Link na floresta Kokiri. É ela quem ensina a Canção da Saria e, mais tarde, se revela uma das Sábias." },
       { pergunta: "Onde fica o Escudo Espelhado?", chaves: ["escudo espelhado", "mirror shield", "espelho"], resposta: "No Templo do Espírito. Ele reflete a luz do sol para abrir caminhos e rebate alguns ataques mágicos." },
+<<<<<<< HEAD
       { pergunta: "Existe uma linha do tempo em que o Link perde?", chaves: ["link perde", "heroi derrotado", "linha do tempo", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Existe, pela cronologia oficial. Numa das três linhas, o Link é derrotado pelo Ganon, e é nela que se passam A Link to the Past e o primeiro Zelda." },
       { pergunta: "Quem é a Impa?", chaves: ["impa", "sheikah"], resposta: "É a guardiã da princesa Zelda, da tribo Sheikah. Ela ajuda a Zelda a fugir do castelo e depois se revela a Sábia da Sombra." },
       { pergunta: "Quem é o Ganondorf?", chaves: ["quem e o ganondorf", "rei dos gerudo", "gerudo"], resposta: "É o rei dos Gerudo, um povo do deserto. Ele finge lealdade ao rei de Hyrule enquanto planeja pegar a Triforce." },
       { pergunta: "Como vencer o Morpha?", chaves: ["morpha", "chefe da agua", "tentaculo"], resposta: "É o chefe do Templo da Água, um núcleo dentro de um tentáculo de água. Puxe o núcleo para fora com o Hookshot e ataque com a espada." },
       { pergunta: "Por que o cartucho do Ocarina era dourado?", chaves: ["dourado", "cartucho dourado", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: a edição de colecionador do Ocarina of Time saiu num cartucho dourado, igual ao do primeiro Zelda no NES." },
       { pergunta: "Qual música do jogo eu posso ouvir aqui?", chaves: ["musica do jogo", "trilha sonora", "trilha", "ouvir", "tocar musica"], resposta: "Aqui no site dá para ouvir Gerudo Valley. É só clicar no botão da nota musical, no canto inferior direito da tela." }
+=======
+      { pergunta: "Existe uma linha do tempo em que o Link perde?", chaves: ["link perde", "heroi derrotado", "linha do tempo", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Existe, pela cronologia oficial. Numa das três linhas, o Link é derrotado pelo Ganon, e é nela que se passam A Link to the Past e o primeiro Zelda." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -938,10 +1027,14 @@ const jogos = [
       { pergunta: "O Skull Kid é o mesmo do Ocarina of Time?", chaves: ["skull kid", "mesmo", "ocarina of time", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "É uma teoria bem popular: o Skull Kid que vivia nos Bosques Perdidos e ficou amigo do Link no Ocarina of Time seria o mesmo. O jogo dá a entender, mas a Nintendo nunca confirmou de forma clara." },
       { pergunta: "Onde pego o Hookshot?", chaves: ["hookshot", "gancho", "piratas"], resposta: "Na Fortaleza dos Piratas, na Grande Baía." },
       { pergunta: "Por que o Majora's Mask foi feito tão rápido?", chaves: ["rapido", "feito rapido", "motor", "reaproveitou", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: ele foi feito em cerca de um ano, reaproveitando o motor e muitos modelos do Ocarina of Time." },
+<<<<<<< HEAD
       { pergunta: "Onde pego a Máscara do Coelho?", chaves: ["mascara do coelho", "coelho", "bunny hood"], resposta: "No Rancho Romani, com o Grog. Ajude a transformar os pintinhos em galinhas adultas e ele entrega a máscara." },
       { pergunta: "Quem é o Vendedor de Máscaras?", chaves: ["vendedor", "mascaras felizes", "happy mask"], resposta: "É o misterioso vendedor que teve a Máscara de Majora roubada pelo Skull Kid. Ele ensina a Canção da Cura ao Link e pede a máscara de volta." },
       { pergunta: "Como sair do Pântano envenenado?", chaves: ["pantano", "veneno", "agua envenenada"], resposta: "A água do pântano é venenosa até você derrotar o chefe do Templo de Woodfall. Antes disso, use a forma Deku para pular pelas flores e atravessar sem encostar na água." },
       { pergunta: "Quem é o Skull Kid?", chaves: ["quem e o skull kid", "skull kid"], resposta: "É um garoto da floresta que achou a Máscara de Majora e foi dominado por ela. No fundo, ele só se sentia sozinho e abandonado pelos amigos." }
+=======
+      { pergunta: "Onde pego a Máscara do Coelho?", chaves: ["mascara do coelho", "coelho", "bunny hood"], resposta: "No Rancho Romani, com o Grog. Ajude a transformar os pintinhos em galinhas adultas e ele entrega a máscara." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -978,10 +1071,14 @@ const jogos = [
       { pergunta: "Onde fica o coelho MIPS?", chaves: ["mips", "coelho"], resposta: "No porão do castelo. Ele aparece depois de 15 estrelas e de novo depois de 50. Cada vez que você pega ele, ganha uma estrela." },
       { pergunta: "Quem é o Toad?", chaves: ["toad", "cogumelo"], resposta: "É o ajudante da Peach. Vários Toads espalhados pelo castelo dão dicas e alguns entregam estrelas." },
       { pergunta: "Por que o controle do N64 tem analógico?", chaves: ["analogico", "controle", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: o Super Mario 64 foi pensado junto com o controle do Nintendo 64, e o analógico permitia andar devagar ou correr, coisa nova na época." },
+<<<<<<< HEAD
       { pergunta: "Como ganhar vidas extras?", chaves: ["vida extra", "vidas", "cogumelo verde", "moedas"], resposta: "Pegue os cogumelos verdes e junte moedas: a cada 50 moedas numa fase, você ganha uma vida." },
       { pergunta: "Quem é o Lakitu?", chaves: ["quem e o lakitu", "nuvem", "cameraman"], resposta: "É a tartaruga que anda numa nuvem. No Mario 64 ele é o \"cinegrafista\" que segura a câmera do jogo." },
       { pergunta: "Por que o Mario 64 é tão importante?", chaves: ["importante", "primeiro 3d", "revolucionou", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: ele mostrou como fazer um jogo de plataforma em 3D com câmera livre e controle analógico. Muitos jogos depois seguiram esse modelo." },
       { pergunta: "Quem é o Bowser?", chaves: ["quem e o bowser", "rei koopa", "tartaruga"], resposta: "É o rei dos Koopas e o vilão de sempre do Mario. No Mario 64 ele tomou o castelo da Peach e escondeu as estrelas nos quadros." }
+=======
+      { pergunta: "Como ganhar vidas extras?", chaves: ["vida extra", "vidas", "cogumelo verde", "moedas"], resposta: "Pegue os cogumelos verdes e junte moedas: a cada 50 moedas numa fase, você ganha uma vida." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -1016,8 +1113,12 @@ const jogos = [
       { pergunta: "A versão de GameCube tinha jogos de NES?", chaves: ["nes", "gamecube", "jogos de nes", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: tinha. Na versão de GameCube dava para ganhar móveis que eram jogos de NES jogáveis." },
       { pergunta: "Os vizinhos vão embora?", chaves: ["vizinho", "vizinhos", "mudar", "embora"], resposta: "De vez em quando um vizinho se muda e outro chega no lugar. Conversar com eles com frequência ajuda a manter os favoritos." },
       { pergunta: "Quem é o K.K. Slider?", chaves: ["quem e o kk", "cachorro", "violao"], resposta: "É um cachorro músico que toca violão. Se você pedir, ele toca uma música e te dá uma cópia para ouvir em casa." },
+<<<<<<< HEAD
       { pergunta: "Os peixes mudam?", chaves: ["peixe", "peixes", "pescar", "pesca"], resposta: "Mudam. Alguns só aparecem em certas estações e horários, então vale pescar em momentos diferentes." },
       { pergunta: "O que está escrito na capa japonesa?", chaves: ["capa", "japones", "escrito", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: o título どうぶつの森 (Dōbutsu no Mori) quer dizer \"Floresta dos Animais\". A capa imita um cartão-postal com selos." }
+=======
+      { pergunta: "Os peixes mudam?", chaves: ["peixe", "peixes", "pescar", "pesca"], resposta: "Mudam. Alguns só aparecem em certas estações e horários, então vale pescar em momentos diferentes." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   },
   {
@@ -1053,9 +1154,13 @@ const jogos = [
       { pergunta: "Como o jogo virou um clássico?", chaves: ["classico", "famoso", "rare", "teoria", "teorias", "curiosidade", "curiosidades", "lenda", "boato"], resposta: "Curiosidade: foi feito por uma equipe pequena da Rare, com pouca experiência em jogos de tiro, e virou referência para os jogos de tiro em console." },
       { pergunta: "Quem é a Xenia Onatopp?", chaves: ["xenia", "onatopp"], resposta: "É a capanga da Janus que luta usando as pernas. Ela aparece como inimiga em algumas fases." },
       { pergunta: "Quem é a Natalya?", chaves: ["natalya", "programadora"], resposta: "É a programadora russa que sobrevive ao ataque em Severnaya e ajuda o Bond com os computadores." },
+<<<<<<< HEAD
       { pergunta: "Quem é o Boris?", chaves: ["boris", "invencivel"], resposta: "É o programador que trai os russos e ajuda a Janus. Ele vive gritando que é invencível." },
       { pergunta: "Quem é o General Ourumov?", chaves: ["ourumov", "general"], resposta: "É o general russo que trabalha com a Janus e ajuda a roubar o satélite GoldenEye." },
       { pergunta: "Quem é o Alec Trevelyan?", chaves: ["alec", "trevelyan", "006"], resposta: "É o ex-agente 006, amigo do Bond que parecia ter morrido na primeira missão. Atenção, spoiler: ele é o chefe da Janus." }
+=======
+      { pergunta: "Quem é o Boris?", chaves: ["boris", "invencivel"], resposta: "É o programador que trai os russos e ajuda a Janus. Ele vive gritando que é invencível." }
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     ]
   }
 ];

@@ -162,7 +162,11 @@ function montarDuelo() {
   } else {
     textoIdade = "Diferença entre os jogos: " + diferenca + (diferenca === 1 ? " ano" : " anos");
   }
+<<<<<<< HEAD
   linhaIdade.innerHTML = '<td colspan="3" class="text-center fw-bold linha-idade">' + textoIdade + "</td>";
+=======
+  linhaIdade.innerHTML = '<th scope="row">Idade</th><td colspan="2" class="text-center fw-bold">' + textoIdade + "</td>";
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
   corpoDuelo.appendChild(linhaIdade);
 }
 

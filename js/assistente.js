@@ -3,10 +3,15 @@
   Arquivo: assistente.js
   Descrição: Assistente Véio. Procura a resposta por palavras-chave e por palavras parecidas
   nas dúvidas do jogo, nas respostas extras e nas informações gerais (ano, empresa, vilão...).
+<<<<<<< HEAD
   Também reconhece quando a pergunta cita outro jogo do site e entende palavras digitadas
   com pequenos erros (distância de Levenshtein). O Google é o último recurso.
   Também conta piadas sobre o jogo quando o usuário pede e, quando perguntam "o que você sabe",
   lista todas as perguntas que conhece (dicas e teorias), sem as piadas.
+=======
+  Também reconhece quando a pergunta cita outro jogo do site. O Google é o último recurso.
+  Também conta piadas sobre o jogo quando o usuário pede.
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
   Antes de responder, o Véio "pensa" por 0,8 segundo, mostrando a churrasqueira animada.
   Autores: Vinicius Vidal e Rafael Chiminello
   Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo - 2026
@@ -65,7 +70,11 @@ function contem(texto, trecho) {
 }
 
 function fatosDoJogo(jogo) {
+<<<<<<< HEAD
   const fatos = [
+=======
+  return [
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     { pergunta: "Quando o jogo saiu?", chaves: ["ano", "quando saiu", "lancamento", "lancado", "lancou", "data"], resposta: jogo.nome + " saiu em " + jogo.ano + " para " + jogo.console + "." },
     { pergunta: "Quem fez o jogo?", chaves: ["empresa", "quem fez", "quem criou", "desenvolvedora", "produtora", "criador", "fabricante"], resposta: jogo.nome + " foi feito pela " + jogo.empresa + "." },
     { pergunta: "Em qual console ele roda?", chaves: ["console", "plataforma", "videogame", "roda", "onde jogar"], resposta: "A versão deste guia é a de " + jogo.console + "." },
@@ -75,6 +84,7 @@ function fatosDoJogo(jogo) {
     { pergunta: "Quem é o vilão?", chaves: ["vilao", "vilaos", "antagonista", "malvado", "inimigo principal"], resposta: "O vilão é " + jogo.vilao + "." },
     { pergunta: "Quais são os personagens?", chaves: ["personagens", "personagem", "protagonista", "heroi", "quem eu controlo"], resposta: "Os principais são: " + jogo.personagens.join(", ") + "." }
   ];
+<<<<<<< HEAD
   if (jogo.video) {
     fatos.push({ pergunta: "Tem vídeo com alguma dica?", chaves: ["video", "assistir", "tem video"], resposta: "Tem! Tem um vídeo mostrando " + jogo.video.titulo.toLowerCase() + ". Ele também aparece aqui na página, dentro da dúvida \"" + jogo.video.pergunta + "\".", link: jogo.video.arquivo });
   }
@@ -89,12 +99,15 @@ function linkDoVideo(jogo, item) {
     return jogo.video.arquivo;
   }
   return null;
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
 }
 
 function baseDoJogo(jogo) {
   return jogo.duvidas.concat(jogo.assistente, fatosDoJogo(jogo));
 }
 
+<<<<<<< HEAD
 function distancia(a, b) {
   const linhaAnterior = [];
   for (let j = 0; j <= b.length; j++) {
@@ -171,11 +184,32 @@ function pontuar(pergunta, item) {
     }
   }
   return { pontos: pontos, exato: exato };
+=======
+function pontuar(pergunta, item) {
+  const texto = normalizar(pergunta);
+  let pontos = 0;
+
+  for (const chave of item.chaves) {
+    if (contem(texto, chave)) {
+      pontos += 2 + normalizar(chave).split(" ").length;
+    }
+  }
+
+  const textoItem = " " + normalizar(item.pergunta + " " + item.chaves.join(" ")) + " ";
+  for (const palavra of palavrasUteis(pergunta)) {
+    const raiz = palavra.length > 5 ? palavra.slice(0, palavra.length - 2) : palavra;
+    if (textoItem.includes(" " + raiz)) {
+      pontos += 1;
+    }
+  }
+  return pontos;
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
 }
 
 function procurar(pergunta, jogo) {
   let melhor = null;
   let maiorPontuacao = 0;
+<<<<<<< HEAD
   let melhorExato = false;
   const parecidas = [];
 
@@ -187,14 +221,31 @@ function procurar(pergunta, jogo) {
       melhorExato = resultado.exato;
     }
     if (resultado.pontos === 1) {
+=======
+  const parecidas = [];
+
+  for (const item of baseDoJogo(jogo)) {
+    const pontos = pontuar(pergunta, item);
+    if (pontos > maiorPontuacao) {
+      maiorPontuacao = pontos;
+      melhor = item;
+    }
+    if (pontos === 1) {
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
       parecidas.push(item.pergunta);
     }
   }
 
   if (maiorPontuacao >= 2) {
+<<<<<<< HEAD
     return { item: melhor, aproximado: !melhorExato, parecidas: [] };
   }
   return { item: null, aproximado: false, parecidas: parecidas.slice(0, 3) };
+=======
+    return { item: melhor, parecidas: [] };
+  }
+  return { item: null, parecidas: parecidas.slice(0, 3) };
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
 }
 
 function jogoCitado(pergunta) {
@@ -213,6 +264,7 @@ function jogoCitado(pergunta) {
   return escolhido;
 }
 
+<<<<<<< HEAD
 function pediuTudo(pergunta) {
   const texto = normalizar(pergunta);
   const pedidos = ["o que voce sabe", "o que tu sabe", "tudo que voce sabe", "tudo que tu sabe", "o que sabe sobre"];
@@ -290,6 +342,8 @@ function mostrarTudo(jogo) {
   mensagens.scrollTop = bolha.offsetTop - mensagens.offsetTop;
 }
 
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
 function sortearPiada() {
   const opcoes = (jogoAtual.piadas || []).concat(piadasGerais);
   let piada = ultimaPiada;
@@ -313,7 +367,11 @@ function respostaDeConversa(pergunta) {
   if (contem(texto, "piada") || contem(texto, "me faz rir") || contem(texto, "engracad") || contem(texto, "zoeira") || contem(texto, "anedota")) {
     return sortearPiada();
   }
+<<<<<<< HEAD
   if (contem(texto, "ajuda") || contem(texto, "lista de perguntas")) {
+=======
+  if (contem(texto, "ajuda") || contem(texto, "o que voce sabe") || contem(texto, "o que tu sabe") || contem(texto, "lista de perguntas")) {
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     const exemplos = [];
     const base = jogoAtual.assistente;
     for (let i = 0; i < base.length && exemplos.length < 4; i++) {
@@ -378,6 +436,7 @@ function responder(evento) {
 }
 
 function gerarResposta(pergunta) {
+<<<<<<< HEAD
   if (pediuTudo(pergunta)) {
     const citadoLista = jogoCitado(pergunta);
     const textoLista = normalizar(pergunta);
@@ -386,6 +445,8 @@ function gerarResposta(pergunta) {
       return;
     }
   }
+=======
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
   const conversa = respostaDeConversa(pergunta);
   if (conversa) {
     adicionarMensagem(conversa, "veio");
@@ -402,12 +463,16 @@ function gerarResposta(pergunta) {
 
   if (resultado.item) {
     if (jogo.id === jogoAtual.id) {
+<<<<<<< HEAD
       const link = linkDoVideo(jogo, resultado.item);
       let texto = resultado.item.resposta;
       if (resultado.aproximado) {
         texto = "Acho que tu quis dizer \"" + resultado.item.pergunta + "\". " + texto;
       }
       adicionarMensagem(texto, "veio", link, "Ver o vídeo", true);
+=======
+      adicionarMensagem(resultado.item.resposta, "veio");
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
     } else {
       adicionarMensagem("Sobre " + jogo.nome + ": " + resultado.item.resposta, "veio", "jogo.html?id=" + jogo.id, "Abrir guia de " + jogo.nome, false);
     }
@@ -432,7 +497,11 @@ function gerarResposta(pergunta) {
 function iniciarAssistente(jogo) {
   jogoAtual = jogo;
   mensagens.innerHTML = "";
+<<<<<<< HEAD
   adicionarMensagem("Bah, tchê! Me diz onde tu travou em " + jogo.nome + " que eu procuro no meu caderno de dicas. Para ver tudo o que eu sei, pergunta: \"o que você sabe sobre este jogo?\"", "veio");
+=======
+  adicionarMensagem("Bah, tchê! Me diz onde tu travou em " + jogo.nome + " que eu procuro no meu caderno de dicas. Se quiser ver o que eu sei, escreve \"ajuda\".", "veio");
+>>>>>>> 81c116ad8f1a5f88007c08bbcf4e6d7b4a7fe107
   if (!assistentePronto) {
     formAssistente.addEventListener("submit", responder);
     assistentePronto = true;
